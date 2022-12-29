@@ -1,0 +1,97 @@
+.TicketCard {
+  width: 500px;
+  height: 130px;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: #fff;
+  display: flex;
+  align-items: center; /* vozmozno potrebyetsia ydalit' */
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 2px 15px -3px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 1px 2px 15px -3px rgba(34, 60, 80, 0.2);
+  box-shadow: 1px 2px 15px -3px rgba(34, 60, 80, 0.2);
+  margin: 20px;
+}
+
+.LeftBox {
+  width: 30%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: url("Turkish_Airlines_logo.png") 25px 10px/100px 30px no-repeat;
+}
+
+.LeftBox::before {
+  content: "";
+  transform: rotate(90deg);
+  width: 128px;
+  position: relative;
+  border-top: 1px solid rgba(0, 0, 0, 0.123);
+  left: 70px;
+  top: 44px;
+}
+
+.BuyNowButton {
+  background-color: rgb(190, 111, 37);
+}
+
+.RigthBox {
+  height: 100%;
+  width: 70%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.FlightTime {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.AirIcon {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.AirIcon::before {
+  content: "";
+  width: 110px;
+  position: relative;
+  border-top: 1px solid rgba(0, 0, 0, 0.075);
+  top: 24px;
+}
+.IconStyle {
+  align-self: flex-end;
+}
+
+.Transfer {
+  align-self: center;
+  font-size: 12px;
+  color: rgba(114, 111, 111, 0.534);
+}
+
+.Time {
+  font-size: 36px;
+  font-weight: 300;
+}
+.Airport {
+  display: flex;
+  flex-direction: columns;
+  justify-content: space-between;
+  padding: 0 5px;
+}
+.AirportName {
+  font-size: 14px;
+}
+.AirportDate {
+  display: flex;
+  flex-direction: column;
+}
+.DateFrom {
+  font-size: 12px;
+  color: rgba(114, 111, 111, 0.534);
+  padding: 2px 0;
+}
